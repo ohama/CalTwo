@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** 사칙연산이 정확하게 동작하는 계산기를 브라우저에서 바로 사용할 수 있어야 한다.
-**Current focus:** Phase 3 - UI Implementation
+**Current focus:** Phase 4 - E2E Testing & CI
 
 ## Current Position
 
-Phase: 4 of 5 (E2E Testing and CI)
-Plan: 2 of 2 in current phase
-Status: In progress
-Last activity: 2026-02-14 — Completed 04-02-PLAN.md
+Phase: 4 of 5 (E2E Testing & CI)
+Plan: 3 of 3 in current phase
+Status: Phase complete
+Last activity: 2026-02-14 — Completed 04-03-PLAN.md
 
-Progress: [███████████] 55%
+Progress: [████████████] 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 3.1 min
-- Total execution time: 0.59 hours
+- Total plans completed: 12
+- Average duration: 3.0 min
+- Total execution time: 0.65 hours
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [███████████] 55%
 | 01-foundation-and-tooling | 3 | 11.5min | 3.8min |
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
-| 04-e2e-testing-and-ci | 2 | 4min | 2min |
+| 04-e2e-testing-and-ci | 3 | 8min | 2.7min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 1min, 3min, 1min
-- Trend: Consistent fast execution across phases
+- Last 5 plans: 1min, 3min, 1min, 4min, 4min
+- Trend: Consistent fast execution (2-4min range)
 
 *Updated after each plan completion*
 
@@ -82,6 +82,9 @@ Recent decisions affecting current work:
 - 04-02: Cache node_modules and Playwright browsers (reduces CI time from ~5min to ~1min)
 - 04-02: Install only Chromium browser in CI (matches local test environment, faster installs)
 - 04-02: Upload artifacts with if: !cancelled() (uploads on success/failure, skips on cancellation)
+- 04-03: Tutorial combines Playwright and GitHub Actions in single guide (better narrative flow)
+- 04-03: Include actual project code snippets instead of hypothetical examples (authenticity)
+- 04-03: Troubleshooting section covers 5 common issues with solutions (practical helpfulness)
 
 ### Pending Todos
 
@@ -93,6 +96,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T09:55:08Z
-Stopped at: Completed 04-02-PLAN.md — GitHub Actions CI with automated unit + E2E testing
+Last session: 2026-02-14T10:02:10Z
+Stopped at: Completed 04-03-PLAN.md — Korean tutorial for Playwright E2E testing and GitHub Actions CI
 Resume file: None
