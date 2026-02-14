@@ -30,10 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Developer opens browser DevTools and sees F# source files (not minified JS)
   4. Project has dotnet-tools.json, global.json with pinned versions
   5. Korean tutorial in tutorial/phase-01.md explains setup step-by-step for beginners
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- TBD (will be created during plan-phase)
+- [ ] 01-01-PLAN.md — Create project structure and configuration files
+- [ ] 01-02-PLAN.md — Install dependencies and verify dev server
+- [ ] 01-03-PLAN.md — Human verification of HMR and source maps
 
 ### Phase 2: Core Calculator Logic
 **Goal**: Calculator arithmetic operations work correctly with pure, testable update function
