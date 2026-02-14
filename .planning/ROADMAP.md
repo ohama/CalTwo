@@ -50,10 +50,12 @@ Plans:
   6. Update function is pure (unit tests pass without side effects)
   7. All edge cases tested (multiple decimals, divide-by-zero, negative results)
   8. Korean tutorial in tutorial/phase-02.md explains MVU pattern and arithmetic logic
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- TBD (will be created during plan-phase)
+- [ ] 02-01-PLAN.md — Test infrastructure (Fable.Mocha) and calculator type definitions
+- [ ] 02-02-PLAN.md — TDD calculator logic (all operations, edge cases)
+- [ ] 02-03-PLAN.md — Korean tutorial and minimal view wiring
 
 ### Phase 3: UI Implementation
 **Goal**: Users interact with clean, responsive calculator UI via buttons and keyboard
@@ -116,7 +118,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
-| 2. Core Calculator Logic | 0/TBD | Not started | - |
+| 2. Core Calculator Logic | 0/3 | Not started | - |
 | 3. UI Implementation | 0/TBD | Not started | - |
 | 4. E2E Testing & CI | 0/TBD | Not started | - |
 | 5. Deployment & Polish | 0/TBD | Not started | - |
