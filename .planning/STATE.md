@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 
 ## Current Position
 
-Phase: 3 of 5 (UI Implementation)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-02-14 — Completed 03-03-PLAN.md
+Phase: 4 of 5 (E2E Testing and CI)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-14 — Completed 04-01-PLAN.md
 
-Progress: [██████████░] 100%
+Progress: [██████████░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 3.3 min
-- Total execution time: 0.50 hours
+- Total plans completed: 10
+- Average duration: 3.2 min
+- Total execution time: 0.55 hours
 
 **By Phase:**
 
@@ -30,10 +30,11 @@ Progress: [██████████░] 100%
 | 01-foundation-and-tooling | 3 | 11.5min | 3.8min |
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
+| 04-e2e-testing-and-ci | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 3min, 4min, 1min
-- Trend: Phase 3 complete with consistent execution speed
+- Last 5 plans: 3min, 4min, 1min, 3min
+- Trend: Consistent fast execution across phases
 
 *Updated after each plan completion*
 
@@ -71,6 +72,11 @@ Recent decisions affecting current work:
 - 03-02: Follow same tutorial style and depth as phase-01.md and phase-02.md for consistency
 - 03-02: Include actual code from completed source files (not hypothetical examples)
 - 03-03: Visual verification deferred (user on remote terminal)
+- 04-01: Playwright chosen for E2E testing (robust, web-first assertions, screenshot/trace on failure)
+- 04-01: data-testid='display' for stable display locator (survives style changes)
+- 04-01: strictPort: true in Vite config prevents port auto-increment (consistent test environment)
+- 04-01: webServer auto-start in Playwright config (tests manage dev server lifecycle)
+- 04-01: Use getByRole for button locators (accessibility-first, survives refactors)
 
 ### Pending Todos
 
@@ -82,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T09:30:00Z
-Stopped at: Completed Phase 3 — CSS Grid calculator UI with keyboard support, Backspace, responsive design, Korean tutorial
+Last session: 2026-02-14T09:51:22Z
+Stopped at: Completed 04-01-PLAN.md — Playwright E2E test suite with 10 passing tests
 Resume file: None
