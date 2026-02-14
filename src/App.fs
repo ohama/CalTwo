@@ -130,7 +130,7 @@ let view (model: Model) (dispatch: Msg -> unit) =
                             style.marginBottom 10
                             style.borderRadius 5
                             style.minHeight 50
-                            style.lineHeight 50
+                            style.lineHeight (length.px 50)
                         ]
                         prop.text model.Display
                     ]
