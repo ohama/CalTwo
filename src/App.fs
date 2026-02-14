@@ -117,6 +117,7 @@ let view (model: Model) (dispatch: Msg -> unit) =
                 prop.children [
                     // Display
                     Html.div [
+                        prop.testId "display"
                         prop.style [
                             style.fontSize 32
                             style.padding 15

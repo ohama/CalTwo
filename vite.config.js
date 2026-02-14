@@ -12,6 +12,10 @@ export default defineConfig({
       include: /\.(fs|js|jsx|ts|tsx)$/
     })
   ],
+  server: {
+    port: 5173,
+    strictPort: true,
+  },
   build: {
     sourcemap: true
   }

@@ -8,15 +8,19 @@
     "preview": "vite preview",
     "test:compile": "dotnet fable tests/Tests.fsproj -o tests/out --noCache",
     "test:run": "npx mocha tests/out/Tests.js --timeout 10000",
-    "test": "npm run test:compile && npm run test:run"
+    "test": "npm run test:compile && npm run test:run",
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3",
     "@vitejs/plugin-react": "^4.3.4",
     "mocha": "^11.7.5",
+    "typescript": "^5.9.3",
     "vite": "^7.0.0",
     "vite-plugin-fable": "0.2.0"
   }
