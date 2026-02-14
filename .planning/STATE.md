@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 ## Current Position
 
 Phase: 5 of 5 (Deployment & Polish)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-14 — Completed 05-01-PLAN.md
+Last activity: 2026-02-14 — Completed 05-02-PLAN.md
 
-Progress: [█████████████] 87%
+Progress: [█████████████▓] 93%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
+- Total plans completed: 14
 - Average duration: 2.9 min
-- Total execution time: 0.69 hours
+- Total execution time: 0.76 hours
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [█████████████] 87%
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
 | 04-e2e-testing-and-ci | 3 | 8min | 2.7min |
-| 05-deployment-and-polish | 1 | 2.3min | 2.3min |
+| 05-deployment-and-polish | 2 | 6.3min | 3.2min |
 
 **Recent Trend:**
-- Last 5 plans: 3min, 1min, 4min, 4min, 2.3min
+- Last 5 plans: 1min, 4min, 4min, 2.3min, 4min
 - Trend: Consistently fast execution (under 4min per plan)
 
 *Updated after each plan completion*
@@ -91,6 +91,9 @@ Recent decisions affecting current work:
 - 05-01: @supports fallback ensures older browsers get focus indicators (progressive enhancement)
 - 05-01: aria-live='polite' on display for non-interrupting screen reader announcements
 - 05-01: role='status' on display for semantic ARIA landmark
+- 05-02: README structure includes demo URL, prerequisites, setup, testing, building, deployment, accessibility, tech stack, contributing
+- 05-02: Korean tutorial targets beginner web developers (knows F# basics, new to Vite/deployment)
+- 05-02: Tutorial uses actual project code instead of hypothetical examples for authenticity
 
 ### Pending Todos
 
@@ -102,6 +105,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T19:32:52Z
-Stopped at: Completed 05-01-PLAN.md — GitHub Pages prep and accessibility features
+Last session: 2026-02-14T10:35:23Z
+Stopped at: Completed 05-02-PLAN.md — README and Korean tutorial documentation
 Resume file: None
