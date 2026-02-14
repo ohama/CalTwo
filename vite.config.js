@@ -12,6 +12,7 @@ export default defineConfig({
       include: /\.(fs|js|jsx|ts|tsx)$/
     })
   ],
+  base: '/CalTwo/',
   server: {
     port: 5173,
     strictPort: true,

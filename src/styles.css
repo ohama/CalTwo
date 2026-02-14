@@ -62,6 +62,20 @@
 .calc-backspace:active {
     background: #6e6e73;
 }
+/* Keyboard focus indicators (WCAG 2.1 SC 2.4.7) */
+.calc-button:focus {
+    outline: none;
+}
+.calc-button:focus-visible {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+@supports not selector(:focus-visible) {
+    .calc-button:focus {
+        outline: 3px solid #4A90E2;
+        outline-offset: 2px;
+    }
+}
 @media (max-width: 375px) {
     .calc-button {
         min-height: 48px;
