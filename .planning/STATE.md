@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** 사칙연산이 정확하게 동작하는 계산기를 브라우저에서 바로 사용할 수 있어야 한다.
-**Current focus:** Phase 4 - E2E Testing & CI (Complete)
+**Current focus:** Phase 5 - Deployment & Polish (In Progress)
 
 ## Current Position
 
-Phase: 4 of 5 (E2E Testing & CI)
-Plan: 3 of 3 in current phase
-Status: Phase complete, verified (10/10 must-haves)
-Last activity: 2026-02-14 — Phase 4 verified and complete
+Phase: 5 of 5 (Deployment & Polish)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-02-14 — Completed 05-01-PLAN.md
 
-Progress: [████████████░] 80%
+Progress: [█████████████] 87%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 3.0 min
-- Total execution time: 0.65 hours
+- Total plans completed: 13
+- Average duration: 2.9 min
+- Total execution time: 0.69 hours
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [████████████░] 80%
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
 | 04-e2e-testing-and-ci | 3 | 8min | 2.7min |
+| 05-deployment-and-polish | 1 | 2.3min | 2.3min |
 
 **Recent Trend:**
-- Last 5 plans: 1min, 3min, 1min, 4min, 4min
-- Trend: Consistent fast execution (2-4min range)
+- Last 5 plans: 3min, 1min, 4min, 4min, 2.3min
+- Trend: Consistently fast execution (under 4min per plan)
 
 *Updated after each plan completion*
 
@@ -85,6 +86,11 @@ Recent decisions affecting current work:
 - 04-03: Tutorial combines Playwright and GitHub Actions in single guide (better narrative flow)
 - 04-03: Include actual project code snippets instead of hypothetical examples (authenticity)
 - 04-03: Troubleshooting section covers 5 common issues with solutions (practical helpfulness)
+- 05-01: base: '/CalTwo/' in vite.config.js for GitHub Pages subdirectory deployment
+- 05-01: :focus-visible instead of :focus for keyboard-only focus indicators (avoids mouse click rings)
+- 05-01: @supports fallback ensures older browsers get focus indicators (progressive enhancement)
+- 05-01: aria-live='polite' on display for non-interrupting screen reader announcements
+- 05-01: role='status' on display for semantic ARIA landmark
 
 ### Pending Todos
 
@@ -96,6 +102,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T10:02:10Z
-Stopped at: Completed 04-03-PLAN.md — Korean tutorial for Playwright E2E testing and GitHub Actions CI
+Last session: 2026-02-14T19:32:52Z
+Stopped at: Completed 05-01-PLAN.md — GitHub Pages prep and accessibility features
 Resume file: None
