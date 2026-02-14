@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [
     fable({
+      project: "./src/App.fsproj",
       jsx: "automatic"
     }),
     react({
