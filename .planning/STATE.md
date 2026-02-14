@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 ## Current Position
 
 Phase: 5 of 5 (Deployment & Polish)
-Plan: 2 of 3 in current phase
-Status: In progress
-Last activity: 2026-02-14 — Completed 05-02-PLAN.md
+Plan: 3 of 3 in current phase
+Status: Phase complete
+Last activity: 2026-02-14 — Completed 05-03-PLAN.md
 
-Progress: [█████████████▓] 93%
+Progress: [██████████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 14
+- Total plans completed: 15
 - Average duration: 2.9 min
-- Total execution time: 0.76 hours
+- Total execution time: 0.79 hours
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [█████████████▓] 93%
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
 | 04-e2e-testing-and-ci | 3 | 8min | 2.7min |
-| 05-deployment-and-polish | 2 | 6.3min | 3.2min |
+| 05-deployment-and-polish | 3 | 8.3min | 2.8min |
 
 **Recent Trend:**
-- Last 5 plans: 1min, 4min, 4min, 2.3min, 4min
+- Last 5 plans: 4min, 4min, 2.3min, 4min, 2min
 - Trend: Consistently fast execution (under 4min per plan)
 
 *Updated after each plan completion*
@@ -94,6 +94,10 @@ Recent decisions affecting current work:
 - 05-02: README structure includes demo URL, prerequisites, setup, testing, building, deployment, accessibility, tech stack, contributing
 - 05-02: Korean tutorial targets beginner web developers (knows F# basics, new to Vite/deployment)
 - 05-02: Tutorial uses actual project code instead of hypothetical examples for authenticity
+- 05-03: actions/checkout@v4 and actions/setup-node@v4 for consistency with ci.yml (avoid version drift)
+- 05-03: workflow_dispatch trigger allows manual deployment without pushing to main
+- 05-03: Concurrency group 'pages' with cancel-in-progress prevents conflicting deployments
+- 05-03: Three-step Pages deployment pattern using official GitHub actions
 
 ### Pending Todos
 
@@ -105,6 +109,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T10:35:23Z
-Stopped at: Completed 05-02-PLAN.md — README and Korean tutorial documentation
+Last session: 2026-02-14T12:00:56Z
+Stopped at: Completed 05-03-PLAN.md — GitHub Pages deployment automation
 Resume file: None
+
+**Phase 5 Complete:** All deployment and polish tasks finished. Project ready for public use.
