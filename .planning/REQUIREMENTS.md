@@ -37,8 +37,8 @@
 
 - [x] **TST-01**: Unit tests cover all arithmetic operations (pure logic)
 - [x] **TST-02**: Unit tests cover edge cases (divide by zero, decimal handling)
-- [ ] **TST-03**: E2E tests verify button click → display result in real browser (Playwright)
-- [ ] **TST-04**: All tests run automatically in CI without human intervention (GitHub Actions)
+- [x] **TST-03**: E2E tests verify button click → display result in real browser (Playwright)
+- [x] **TST-04**: All tests run automatically in CI without human intervention (GitHub Actions)
 
 ### Deployment (DEP)
 
@@ -100,8 +100,8 @@
 | UI-03 | Phase 3 | Complete |
 | TST-01 | Phase 2 | Complete |
 | TST-02 | Phase 2 | Complete |
-| TST-03 | Phase 4 | Pending |
-| TST-04 | Phase 4 | Pending |
+| TST-03 | Phase 4 | Complete |
+| TST-04 | Phase 4 | Complete |
 | DEP-01 | Phase 1 | Complete |
 | DEP-02 | Phase 5 | Pending |
 | DEP-03 | Phase 5 | Pending |
@@ -123,4 +123,4 @@
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 3 completion*
+*Last updated: 2026-02-14 after Phase 4 completion*

@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Tooling** - F# Elmish project with Vite, proper versioning, source maps
 - [x] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
 - [x] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
-- [ ] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
+- [x] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
 - [ ] **Phase 5: Deployment & Polish** - GitHub Pages deployment with accessibility improvements
 
 ## Phase Details
@@ -92,9 +92,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Playwright setup, data-testid, and E2E test suite
-- [ ] 04-02-PLAN.md — GitHub Actions CI workflow
-- [ ] 04-03-PLAN.md — Korean tutorial for Playwright and CI
+- [x] 04-01-PLAN.md — Playwright setup, data-testid, and E2E test suite
+- [x] 04-02-PLAN.md — GitHub Actions CI workflow
+- [x] 04-03-PLAN.md — Korean tutorial for Playwright and CI
 
 ### Phase 5: Deployment & Polish
 **Goal**: CalTwo is publicly accessible at GitHub Pages URL with accessibility improvements
@@ -124,10 +124,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
 | 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
 | 3. UI Implementation | 3/3 | Complete | 2026-02-14 |
-| 4. E2E Testing & CI | 0/3 | Not started | - |
+| 4. E2E Testing & CI | 3/3 | Complete | 2026-02-14 |
 | 5. Deployment & Polish | 0/TBD | Not started | - |
 
 ---
 
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 4 planning*
+*Last updated: 2026-02-14 after Phase 4 completion*
