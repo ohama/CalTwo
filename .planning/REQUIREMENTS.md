@@ -42,15 +42,15 @@
 
 ### Deployment (DEP)
 
-- [ ] **DEP-01**: App builds to static files (HTML + JS + CSS)
-- [ ] **DEP-02**: App deploys to GitHub Pages via GitHub Actions on push to main
-- [ ] **DEP-03**: Deployed app loads and functions correctly at GitHub Pages URL
+- [x] **DEP-01**: App builds to static files (HTML + JS + CSS)
+- [x] **DEP-02**: App deploys to GitHub Pages via GitHub Actions on push to main
+- [x] **DEP-03**: Deployed app loads and functions correctly at GitHub Pages URL
 
 ### Tutorial (TUT)
 
-- [ ] **TUT-01**: Each phase produces a Korean tutorial markdown file in `tutorial/` directory
-- [ ] **TUT-02**: Each tutorial explains the phase's technical content step-by-step for beginner developers
-- [ ] **TUT-03**: Tutorials include code examples, commands, and explanations a beginner can follow
+- [x] **TUT-01**: Each phase produces a Korean tutorial markdown file in `tutorial/` directory
+- [x] **TUT-02**: Each tutorial explains the phase's technical content step-by-step for beginner developers
+- [x] **TUT-03**: Tutorials include code examples, commands, and explanations a beginner can follow
 
 ## v2 Requirements
 
@@ -103,11 +103,11 @@
 | TST-03 | Phase 4 | Complete |
 | TST-04 | Phase 4 | Complete |
 | DEP-01 | Phase 1 | Complete |
-| DEP-02 | Phase 5 | Pending |
-| DEP-03 | Phase 5 | Pending |
-| TUT-01 | Every phase | Pending |
-| TUT-02 | Every phase | Pending |
-| TUT-03 | Every phase | Pending |
+| DEP-02 | Phase 5 | Complete |
+| DEP-03 | Phase 5 | Complete |
+| TUT-01 | Every phase | Complete |
+| TUT-02 | Every phase | Complete |
+| TUT-03 | Every phase | Complete |
 
 **Coverage:**
 - v1 requirements: 26 total
@@ -123,4 +123,4 @@
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 4 completion*
+*Last updated: 2026-02-14 after Phase 5 completion*

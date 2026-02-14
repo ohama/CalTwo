@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
 - [x] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
 - [x] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
-- [ ] **Phase 5: Deployment & Polish** - GitHub Pages deployment with accessibility improvements
+- [x] **Phase 5: Deployment & Polish** - GitHub Pages deployment with accessibility improvements
 
 ## Phase Details
 
@@ -112,9 +112,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Vite base path + CSS focus-visible + ARIA labels
-- [ ] 05-02-PLAN.md — README.md + Korean tutorial for Phase 5
-- [ ] 05-03-PLAN.md — GitHub Pages deployment workflow + human verification
+- [x] 05-01-PLAN.md — Vite base path + CSS focus-visible + ARIA labels
+- [x] 05-02-PLAN.md — README.md + Korean tutorial for Phase 5
+- [x] 05-03-PLAN.md — GitHub Pages deployment workflow + human verification
 
 ## Progress
 
@@ -127,9 +127,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
 | 3. UI Implementation | 3/3 | Complete | 2026-02-14 |
 | 4. E2E Testing & CI | 3/3 | Complete | 2026-02-14 |
-| 5. Deployment & Polish | 0/3 | Not started | - |
+| 5. Deployment & Polish | 3/3 | Complete | 2026-02-14 |
 
 ---
 
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 4 completion*
+*Last updated: 2026-02-14 after Phase 5 completion*
