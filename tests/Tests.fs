@@ -222,7 +222,63 @@ let clearTests = testList "Clear" [
 ]
 
 // ============================================================================
-// 7. EDGE CASE TESTS
+// 7. BACKSPACE TESTS
+// ============================================================================
+
+let backspaceTests = testList "Backspace" [
+    test "Backspace on '123' shows '12'" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update (DigitPressed 1) |> fst
+        let m2 = m1 |> App.update (DigitPressed 2) |> fst
+        let m3 = m2 |> App.update (DigitPressed 3) |> fst
+        let m4 = m3 |> App.update BackspacePressed |> fst
+        Expect.equal m4.Display "12" "Backspace should remove last character"
+    }
+
+    test "Backspace on '5' (single digit) shows '0'" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update (DigitPressed 5) |> fst
+        let m2 = m1 |> App.update BackspacePressed |> fst
+        Expect.equal m2.Display "0" "Backspace on single digit should reset to 0"
+    }
+
+    test "Backspace on '0' shows '0' (no-op)" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update BackspacePressed |> fst
+        Expect.equal m1.Display "0" "Backspace on 0 should do nothing"
+    }
+
+    test "Backspace on 'Error' shows 'Error' (no-op)" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update (DigitPressed 5) |> fst
+        let m2 = m1 |> App.update (OperatorPressed Divide) |> fst
+        let m3 = m2 |> App.update (DigitPressed 0) |> fst
+        let m4 = m3 |> App.update EqualsPressed |> fst  // Error state
+        let m5 = m4 |> App.update BackspacePressed |> fst
+        Expect.equal m5.Display "Error" "Backspace on Error should do nothing"
+    }
+
+    test "Backspace on '3.14' shows '3.1'" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update (DigitPressed 3) |> fst
+        let m2 = m1 |> App.update DecimalPressed |> fst
+        let m3 = m2 |> App.update (DigitPressed 1) |> fst
+        let m4 = m3 |> App.update (DigitPressed 4) |> fst
+        let m5 = m4 |> App.update BackspacePressed |> fst
+        Expect.equal m5.Display "3.1" "Backspace should work on decimal numbers"
+    }
+
+    test "Backspace on '3.' shows '3'" {
+        let model, _ = App.init ()
+        let m1 = model |> App.update (DigitPressed 3) |> fst
+        let m2 = m1 |> App.update DecimalPressed |> fst
+        let m3 = m2 |> App.update BackspacePressed |> fst
+        Expect.equal m3.Display "3" "Backspace should remove decimal point"
+    }
+]
+
+// ============================================================================
+// 8. EDGE CASE TESTS
 // ============================================================================
 
 let edgeCaseTests = testList "Edge Cases" [
@@ -303,6 +359,7 @@ let allTests = testList "CalTwo" [
     leftToRightTests
     divisionByZeroTests
     clearTests
+    backspaceTests
     edgeCaseTests
 ]
 

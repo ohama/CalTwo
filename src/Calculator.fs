@@ -19,6 +19,7 @@ type Msg =
     | OperatorPressed of MathOp // +, -, ×, ÷
     | EqualsPressed             // =
     | ClearPressed              // C/AC
+    | BackspacePressed          // Backspace (delete last character)
 
 /// Calculator state
 type Model = {

@@ -73,6 +73,14 @@ let update (msg: Msg) (model: Model) : Model * Cmd<Msg> =
     | ClearPressed ->
         init () |> fst, Cmd.none
 
+    | BackspacePressed ->
+        if model.Display = "Error" || model.Display = "0" then
+            model, Cmd.none
+        elif model.Display.Length = 1 then
+            { model with Display = "0" }, Cmd.none
+        else
+            { model with Display = model.Display.[0..model.Display.Length-2] }, Cmd.none
+
 let view (model: Model) (dispatch: Msg -> unit) =
     Html.div [
         prop.style [ style.padding 20; style.fontFamily "monospace"; style.maxWidth 400 ]
