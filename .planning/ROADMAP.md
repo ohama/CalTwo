@@ -109,10 +109,12 @@ Plans:
   6. Calculator works at both localhost:3000/ and github.io/CalTwo/ (base path configured)
   7. README.md explains setup, development, testing, and deployment for new contributors
   8. Korean tutorial in tutorial/phase-05.md explains Vite build config and GitHub Pages deployment
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- TBD (will be created during plan-phase)
+- [ ] 05-01-PLAN.md — Vite base path + CSS focus-visible + ARIA labels
+- [ ] 05-02-PLAN.md — README.md + Korean tutorial for Phase 5
+- [ ] 05-03-PLAN.md — GitHub Pages deployment workflow + human verification
 
 ## Progress
 
@@ -125,7 +127,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
 | 3. UI Implementation | 3/3 | Complete | 2026-02-14 |
 | 4. E2E Testing & CI | 3/3 | Complete | 2026-02-14 |
-| 5. Deployment & Polish | 0/TBD | Not started | - |
+| 5. Deployment & Polish | 0/3 | Not started | - |
 
 ---
 
