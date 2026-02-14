@@ -13,7 +13,7 @@ CalTwo delivers a browser-based calculator with F# + Elmish, progressing from to
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Tooling** - F# Elmish project with Vite, proper versioning, source maps
-- [ ] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
+- [x] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
 - [ ] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
 - [ ] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
 - [ ] **Phase 5: Deployment & Polish** - GitHub Pages deployment with accessibility improvements
@@ -53,9 +53,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Test infrastructure (Fable.Mocha) and calculator type definitions
-- [ ] 02-02-PLAN.md — TDD calculator logic (all operations, edge cases)
-- [ ] 02-03-PLAN.md — Korean tutorial and minimal view wiring
+- [x] 02-01-PLAN.md — Test infrastructure (Fable.Mocha) and calculator type definitions
+- [x] 02-02-PLAN.md — TDD calculator logic (all operations, edge cases)
+- [x] 02-03-PLAN.md — Korean tutorial and minimal view wiring
 
 ### Phase 3: UI Implementation
 **Goal**: Users interact with clean, responsive calculator UI via buttons and keyboard
@@ -118,7 +118,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
-| 2. Core Calculator Logic | 0/3 | Not started | - |
+| 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
 | 3. UI Implementation | 0/TBD | Not started | - |
 | 4. E2E Testing & CI | 0/TBD | Not started | - |
 | 5. Deployment & Polish | 0/TBD | Not started | - |

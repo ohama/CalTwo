@@ -7,25 +7,25 @@
 
 ### Input (INP)
 
-- [ ] **INP-01**: User can input digits 0-9 by clicking buttons
-- [ ] **INP-02**: User can input decimal point (.)
+- [x] **INP-01**: User can input digits 0-9 by clicking buttons
+- [x] **INP-02**: User can input decimal point (.)
 - [ ] **INP-03**: User can delete last input character (Backspace)
-- [ ] **INP-04**: User can clear all input (C/AC)
+- [x] **INP-04**: User can clear all input (C/AC)
 
 ### Operations (OPS)
 
-- [ ] **OPS-01**: User can perform addition (+)
-- [ ] **OPS-02**: User can perform subtraction (-)
-- [ ] **OPS-03**: User can perform multiplication (×)
-- [ ] **OPS-04**: User can perform division (÷)
-- [ ] **OPS-05**: User can execute calculation by pressing equals (=)
-- [ ] **OPS-06**: User sees "Error" when dividing by zero
+- [x] **OPS-01**: User can perform addition (+)
+- [x] **OPS-02**: User can perform subtraction (-)
+- [x] **OPS-03**: User can perform multiplication (×)
+- [x] **OPS-04**: User can perform division (÷)
+- [x] **OPS-05**: User can execute calculation by pressing equals (=)
+- [x] **OPS-06**: User sees "Error" when dividing by zero
 
 ### Display (DSP)
 
-- [ ] **DSP-01**: User sees current input on display
-- [ ] **DSP-02**: User sees calculation result after pressing equals
-- [ ] **DSP-03**: Display updates immediately on every input
+- [x] **DSP-01**: User sees current input on display
+- [x] **DSP-02**: User sees calculation result after pressing equals
+- [x] **DSP-03**: Display updates immediately on every input
 
 ### UI (UI)
 
@@ -35,8 +35,8 @@
 
 ### Testing (TST)
 
-- [ ] **TST-01**: Unit tests cover all arithmetic operations (pure logic)
-- [ ] **TST-02**: Unit tests cover edge cases (divide by zero, decimal handling)
+- [x] **TST-01**: Unit tests cover all arithmetic operations (pure logic)
+- [x] **TST-02**: Unit tests cover edge cases (divide by zero, decimal handling)
 - [ ] **TST-03**: E2E tests verify button click → display result in real browser (Playwright)
 - [ ] **TST-04**: All tests run automatically in CI without human intervention (GitHub Actions)
 
@@ -82,24 +82,24 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INP-01 | Phase 2 | Pending |
-| INP-02 | Phase 2 | Pending |
+| INP-01 | Phase 2 | Complete |
+| INP-02 | Phase 2 | Complete |
 | INP-03 | Phase 3 | Pending |
-| INP-04 | Phase 2 | Pending |
-| OPS-01 | Phase 2 | Pending |
-| OPS-02 | Phase 2 | Pending |
-| OPS-03 | Phase 2 | Pending |
-| OPS-04 | Phase 2 | Pending |
-| OPS-05 | Phase 2 | Pending |
-| OPS-06 | Phase 2 | Pending |
-| DSP-01 | Phase 2 | Pending |
-| DSP-02 | Phase 2 | Pending |
-| DSP-03 | Phase 2 | Pending |
+| INP-04 | Phase 2 | Complete |
+| OPS-01 | Phase 2 | Complete |
+| OPS-02 | Phase 2 | Complete |
+| OPS-03 | Phase 2 | Complete |
+| OPS-04 | Phase 2 | Complete |
+| OPS-05 | Phase 2 | Complete |
+| OPS-06 | Phase 2 | Complete |
+| DSP-01 | Phase 2 | Complete |
+| DSP-02 | Phase 2 | Complete |
+| DSP-03 | Phase 2 | Complete |
 | UI-01 | Phase 3 | Pending |
 | UI-02 | Phase 3 | Pending |
 | UI-03 | Phase 3 | Pending |
-| TST-01 | Phase 2 | Pending |
-| TST-02 | Phase 2 | Pending |
+| TST-01 | Phase 2 | Complete |
+| TST-02 | Phase 2 | Complete |
 | TST-03 | Phase 4 | Pending |
 | TST-04 | Phase 4 | Pending |
 | DEP-01 | Phase 1 | Complete |
@@ -123,4 +123,4 @@
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after roadmap creation*
+*Last updated: 2026-02-14 after Phase 2 completion*
