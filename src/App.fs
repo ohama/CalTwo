@@ -83,68 +83,159 @@ let update (msg: Msg) (model: Model) : Model * Cmd<Msg> =
 
 let view (model: Model) (dispatch: Msg -> unit) =
     Html.div [
-        prop.style [ style.padding 20; style.fontFamily "monospace"; style.maxWidth 400 ]
+        prop.style [ style.width (length.percent 90); style.maxWidth 400; style.margin.auto; style.fontFamily "monospace" ]
         prop.children [
-            Html.h2 "CalTwo Calculator"
-            // Display
-            Html.div [
-                prop.style [
-                    style.fontSize 32
-                    style.padding 15
-                    style.backgroundColor "#222"
-                    style.color "#0f0"
-                    style.textAlign.right
-                    style.marginBottom 10
-                    style.borderRadius 5
-                    style.minHeight 50
-                    style.lineHeight 50
-                ]
-                prop.text model.Display
+            Html.h2 [
+                prop.style [ style.textAlign.center ]
+                prop.text "CalTwo Calculator"
             ]
-            // Temporary test buttons (Phase 3 will replace with proper UI)
+            // Keyboard-enabled container
             Html.div [
-                prop.style [ style.display.flex; style.flexWrap.wrap; style.gap 5 ]
+                prop.tabIndex 0
+                prop.onKeyDown (fun e ->
+                    match e.key with
+                    | "0" -> dispatch (DigitPressed 0); e.preventDefault()
+                    | "1" -> dispatch (DigitPressed 1); e.preventDefault()
+                    | "2" -> dispatch (DigitPressed 2); e.preventDefault()
+                    | "3" -> dispatch (DigitPressed 3); e.preventDefault()
+                    | "4" -> dispatch (DigitPressed 4); e.preventDefault()
+                    | "5" -> dispatch (DigitPressed 5); e.preventDefault()
+                    | "6" -> dispatch (DigitPressed 6); e.preventDefault()
+                    | "7" -> dispatch (DigitPressed 7); e.preventDefault()
+                    | "8" -> dispatch (DigitPressed 8); e.preventDefault()
+                    | "9" -> dispatch (DigitPressed 9); e.preventDefault()
+                    | "." -> dispatch DecimalPressed; e.preventDefault()
+                    | "+" -> dispatch (OperatorPressed Add); e.preventDefault()
+                    | "-" -> dispatch (OperatorPressed Subtract); e.preventDefault()
+                    | "*" -> dispatch (OperatorPressed Multiply); e.preventDefault()
+                    | "/" -> dispatch (OperatorPressed Divide); e.preventDefault()
+                    | "Enter" -> dispatch EqualsPressed; e.preventDefault()
+                    | "Escape" -> dispatch ClearPressed; e.preventDefault()
+                    | "Backspace" -> dispatch BackspacePressed; e.preventDefault()
+                    | _ -> ()  // Don't prevent default for unhandled keys
+                )
                 prop.children [
-                    for d in 0..9 do
-                        Html.button [
-                            prop.text (string d)
-                            prop.onClick (fun _ -> dispatch (DigitPressed d))
-                            prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    // Display
+                    Html.div [
+                        prop.style [
+                            style.fontSize 32
+                            style.padding 15
+                            style.backgroundColor "#222"
+                            style.color "#0f0"
+                            style.textAlign.right
+                            style.marginBottom 10
+                            style.borderRadius 5
+                            style.minHeight 50
+                            style.lineHeight 50
                         ]
-                    Html.button [
-                        prop.text "."
-                        prop.onClick (fun _ -> dispatch DecimalPressed)
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                        prop.text model.Display
                     ]
-                    Html.button [
-                        prop.text "+"
-                        prop.onClick (fun _ -> dispatch (OperatorPressed Add))
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
-                    ]
-                    Html.button [
-                        prop.text "-"
-                        prop.onClick (fun _ -> dispatch (OperatorPressed Subtract))
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
-                    ]
-                    Html.button [
-                        prop.text "×"
-                        prop.onClick (fun _ -> dispatch (OperatorPressed Multiply))
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
-                    ]
-                    Html.button [
-                        prop.text "÷"
-                        prop.onClick (fun _ -> dispatch (OperatorPressed Divide))
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
-                    ]
-                    Html.button [
-                        prop.text "="
-                        prop.onClick (fun _ -> dispatch EqualsPressed)
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
-                    ]
-                    Html.button [
-                        prop.text "C"
-                        prop.onClick (fun _ -> dispatch ClearPressed)
-                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    // Button grid (4 columns)
+                    Html.div [
+                        prop.style [
+                            style.display.grid
+                            style.custom ("gridTemplateColumns", "repeat(4, 1fr)")
+                            style.gap 8
+                        ]
+                        prop.children [
+                            // Row 1: C, BS, (empty), ÷
+                            Html.button [
+                                prop.className "calc-button calc-clear"
+                                prop.text "C"
+                                prop.onClick (fun _ -> dispatch ClearPressed)
+                            ]
+                            Html.button [
+                                prop.className "calc-button calc-backspace"
+                                prop.text "←"
+                                prop.onClick (fun _ -> dispatch BackspacePressed)
+                            ]
+                            Html.div []  // Empty cell
+                            Html.button [
+                                prop.className "calc-button calc-operator"
+                                prop.text "÷"
+                                prop.onClick (fun _ -> dispatch (OperatorPressed Divide))
+                            ]
+                            // Row 2: 7, 8, 9, ×
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "7"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 7))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "8"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 8))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "9"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 9))
+                            ]
+                            Html.button [
+                                prop.className "calc-button calc-operator"
+                                prop.text "×"
+                                prop.onClick (fun _ -> dispatch (OperatorPressed Multiply))
+                            ]
+                            // Row 3: 4, 5, 6, -
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "4"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 4))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "5"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 5))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "6"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 6))
+                            ]
+                            Html.button [
+                                prop.className "calc-button calc-operator"
+                                prop.text "-"
+                                prop.onClick (fun _ -> dispatch (OperatorPressed Subtract))
+                            ]
+                            // Row 4: 1, 2, 3, +
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "1"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 1))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "2"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 2))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "3"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 3))
+                            ]
+                            Html.button [
+                                prop.className "calc-button calc-operator"
+                                prop.text "+"
+                                prop.onClick (fun _ -> dispatch (OperatorPressed Add))
+                            ]
+                            // Row 5: 0 (span 2), ., =
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.style [ style.custom ("gridColumn", "1 / 3") ]
+                                prop.text "0"
+                                prop.onClick (fun _ -> dispatch (DigitPressed 0))
+                            ]
+                            Html.button [
+                                prop.className "calc-button"
+                                prop.text "."
+                                prop.onClick (fun _ -> dispatch DecimalPressed)
+                            ]
+                            Html.button [
+                                prop.className "calc-button calc-equals"
+                                prop.text "="
+                                prop.onClick (fun _ -> dispatch EqualsPressed)
+                            ]
+                        ]
                     ]
                 ]
             ]
