@@ -118,6 +118,9 @@ let view (model: Model) (dispatch: Msg -> unit) =
                     // Display
                     Html.div [
                         prop.testId "display"
+                        prop.role "status"
+                        prop.ariaLabel "Calculator display"
+                        prop.custom ("aria-live", "polite")
                         prop.style [
                             style.fontSize 32
                             style.padding 15
@@ -141,97 +144,115 @@ let view (model: Model) (dispatch: Msg -> unit) =
                         prop.children [
                             // Row 1: C, BS, (empty), ÷
                             Html.button [
+                                prop.ariaLabel "Clear"
                                 prop.className "calc-button calc-clear"
                                 prop.text "C"
                                 prop.onClick (fun _ -> dispatch ClearPressed)
                             ]
                             Html.button [
+                                prop.ariaLabel "Backspace"
                                 prop.className "calc-button calc-backspace"
                                 prop.text "←"
                                 prop.onClick (fun _ -> dispatch BackspacePressed)
                             ]
                             Html.div []  // Empty cell
                             Html.button [
+                                prop.ariaLabel "Divide"
                                 prop.className "calc-button calc-operator"
                                 prop.text "÷"
                                 prop.onClick (fun _ -> dispatch (OperatorPressed Divide))
                             ]
                             // Row 2: 7, 8, 9, ×
                             Html.button [
+                                prop.ariaLabel "7"
                                 prop.className "calc-button"
                                 prop.text "7"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 7))
                             ]
                             Html.button [
+                                prop.ariaLabel "8"
                                 prop.className "calc-button"
                                 prop.text "8"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 8))
                             ]
                             Html.button [
+                                prop.ariaLabel "9"
                                 prop.className "calc-button"
                                 prop.text "9"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 9))
                             ]
                             Html.button [
+                                prop.ariaLabel "Multiply"
                                 prop.className "calc-button calc-operator"
                                 prop.text "×"
                                 prop.onClick (fun _ -> dispatch (OperatorPressed Multiply))
                             ]
                             // Row 3: 4, 5, 6, -
                             Html.button [
+                                prop.ariaLabel "4"
                                 prop.className "calc-button"
                                 prop.text "4"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 4))
                             ]
                             Html.button [
+                                prop.ariaLabel "5"
                                 prop.className "calc-button"
                                 prop.text "5"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 5))
                             ]
                             Html.button [
+                                prop.ariaLabel "6"
                                 prop.className "calc-button"
                                 prop.text "6"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 6))
                             ]
                             Html.button [
+                                prop.ariaLabel "Subtract"
                                 prop.className "calc-button calc-operator"
                                 prop.text "-"
                                 prop.onClick (fun _ -> dispatch (OperatorPressed Subtract))
                             ]
                             // Row 4: 1, 2, 3, +
                             Html.button [
+                                prop.ariaLabel "1"
                                 prop.className "calc-button"
                                 prop.text "1"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 1))
                             ]
                             Html.button [
+                                prop.ariaLabel "2"
                                 prop.className "calc-button"
                                 prop.text "2"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 2))
                             ]
                             Html.button [
+                                prop.ariaLabel "3"
                                 prop.className "calc-button"
                                 prop.text "3"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 3))
                             ]
                             Html.button [
+                                prop.ariaLabel "Add"
                                 prop.className "calc-button calc-operator"
                                 prop.text "+"
                                 prop.onClick (fun _ -> dispatch (OperatorPressed Add))
                             ]
                             // Row 5: 0 (span 2), ., =
                             Html.button [
+                                prop.ariaLabel "0"
                                 prop.className "calc-button"
                                 prop.style [ style.custom ("gridColumn", "1 / 3") ]
                                 prop.text "0"
                                 prop.onClick (fun _ -> dispatch (DigitPressed 0))
                             ]
                             Html.button [
+                                prop.ariaLabel "Decimal point"
                                 prop.className "calc-button"
                                 prop.text "."
                                 prop.onClick (fun _ -> dispatch DecimalPressed)
                             ]
                             Html.button [
+                                prop.ariaLabel "Equals"
                                 prop.className "calc-button calc-equals"
                                 prop.text "="
                                 prop.onClick (fun _ -> dispatch EqualsPressed)
