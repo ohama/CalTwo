@@ -75,19 +75,70 @@ let update (msg: Msg) (model: Model) : Model * Cmd<Msg> =
 
 let view (model: Model) (dispatch: Msg -> unit) =
     Html.div [
-        prop.style [ style.padding 20; style.fontFamily "sans-serif" ]
+        prop.style [ style.padding 20; style.fontFamily "monospace"; style.maxWidth 400 ]
         prop.children [
-            Html.h1 "CalTwo Calculator"
+            Html.h2 "CalTwo Calculator"
+            // Display
             Html.div [
                 prop.style [
-                    style.fontSize 24
-                    style.padding 10
-                    style.backgroundColor "#f0f0f0"
+                    style.fontSize 32
+                    style.padding 15
+                    style.backgroundColor "#222"
+                    style.color "#0f0"
                     style.textAlign.right
-                    style.minHeight 40
+                    style.marginBottom 10
+                    style.borderRadius 5
+                    style.minHeight 50
+                    style.lineHeight 50
                 ]
                 prop.text model.Display
             ]
-            Html.p "Phase 2: Calculator logic in progress..."
+            // Temporary test buttons (Phase 3 will replace with proper UI)
+            Html.div [
+                prop.style [ style.display.flex; style.flexWrap.wrap; style.gap 5 ]
+                prop.children [
+                    for d in 0..9 do
+                        Html.button [
+                            prop.text (string d)
+                            prop.onClick (fun _ -> dispatch (DigitPressed d))
+                            prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                        ]
+                    Html.button [
+                        prop.text "."
+                        prop.onClick (fun _ -> dispatch DecimalPressed)
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "+"
+                        prop.onClick (fun _ -> dispatch (OperatorPressed Add))
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "-"
+                        prop.onClick (fun _ -> dispatch (OperatorPressed Subtract))
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "×"
+                        prop.onClick (fun _ -> dispatch (OperatorPressed Multiply))
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "÷"
+                        prop.onClick (fun _ -> dispatch (OperatorPressed Divide))
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "="
+                        prop.onClick (fun _ -> dispatch EqualsPressed)
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                    Html.button [
+                        prop.text "C"
+                        prop.onClick (fun _ -> dispatch ClearPressed)
+                        prop.style [ style.padding(10, 15); style.fontSize 16 ]
+                    ]
+                ]
+            ]
         ]
     ]
