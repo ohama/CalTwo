@@ -12,7 +12,7 @@ CalTwo delivers a browser-based calculator with F# + Elmish, progressing from to
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Tooling** - F# Elmish project with Vite, proper versioning, source maps
+- [x] **Phase 1: Foundation & Tooling** - F# Elmish project with Vite, proper versioning, source maps
 - [ ] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
 - [ ] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
 - [ ] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
@@ -33,9 +33,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Create project structure and configuration files
-- [ ] 01-02-PLAN.md — Install dependencies and verify dev server
-- [ ] 01-03-PLAN.md — Human verification of HMR and source maps
+- [x] 01-01-PLAN.md — Create project structure and configuration files
+- [x] 01-02-PLAN.md — Install dependencies and verify dev server
+- [x] 01-03-PLAN.md — Human verification of HMR and source maps
 
 ### Phase 2: Core Calculator Logic
 **Goal**: Calculator arithmetic operations work correctly with pure, testable update function
@@ -115,7 +115,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Tooling | 0/TBD | Not started | - |
+| 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
 | 2. Core Calculator Logic | 0/TBD | Not started | - |
 | 3. UI Implementation | 0/TBD | Not started | - |
 | 4. E2E Testing & CI | 0/TBD | Not started | - |

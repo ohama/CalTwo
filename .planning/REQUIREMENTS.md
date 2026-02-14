@@ -102,7 +102,7 @@
 | TST-02 | Phase 2 | Pending |
 | TST-03 | Phase 4 | Pending |
 | TST-04 | Phase 4 | Pending |
-| DEP-01 | Phase 1 | Pending |
+| DEP-01 | Phase 1 | Complete |
 | DEP-02 | Phase 5 | Pending |
 | DEP-03 | Phase 5 | Pending |
 | TUT-01 | Every phase | Pending |
