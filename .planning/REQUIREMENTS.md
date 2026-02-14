@@ -82,38 +82,45 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INP-01 | TBD | Pending |
-| INP-02 | TBD | Pending |
-| INP-03 | TBD | Pending |
-| INP-04 | TBD | Pending |
-| OPS-01 | TBD | Pending |
-| OPS-02 | TBD | Pending |
-| OPS-03 | TBD | Pending |
-| OPS-04 | TBD | Pending |
-| OPS-05 | TBD | Pending |
-| OPS-06 | TBD | Pending |
-| DSP-01 | TBD | Pending |
-| DSP-02 | TBD | Pending |
-| DSP-03 | TBD | Pending |
-| UI-01 | TBD | Pending |
-| UI-02 | TBD | Pending |
-| UI-03 | TBD | Pending |
-| TST-01 | TBD | Pending |
-| TST-02 | TBD | Pending |
-| TST-03 | TBD | Pending |
-| TST-04 | TBD | Pending |
-| DEP-01 | TBD | Pending |
-| DEP-02 | TBD | Pending |
-| DEP-03 | TBD | Pending |
+| INP-01 | Phase 2 | Pending |
+| INP-02 | Phase 2 | Pending |
+| INP-03 | Phase 3 | Pending |
+| INP-04 | Phase 2 | Pending |
+| OPS-01 | Phase 2 | Pending |
+| OPS-02 | Phase 2 | Pending |
+| OPS-03 | Phase 2 | Pending |
+| OPS-04 | Phase 2 | Pending |
+| OPS-05 | Phase 2 | Pending |
+| OPS-06 | Phase 2 | Pending |
+| DSP-01 | Phase 2 | Pending |
+| DSP-02 | Phase 2 | Pending |
+| DSP-03 | Phase 2 | Pending |
+| UI-01 | Phase 3 | Pending |
+| UI-02 | Phase 3 | Pending |
+| UI-03 | Phase 3 | Pending |
+| TST-01 | Phase 2 | Pending |
+| TST-02 | Phase 2 | Pending |
+| TST-03 | Phase 4 | Pending |
+| TST-04 | Phase 4 | Pending |
+| DEP-01 | Phase 1 | Pending |
+| DEP-02 | Phase 5 | Pending |
+| DEP-03 | Phase 5 | Pending |
 | TUT-01 | Every phase | Pending |
 | TUT-02 | Every phase | Pending |
 | TUT-03 | Every phase | Pending |
 
 **Coverage:**
 - v1 requirements: 26 total
-- Mapped to phases: 0
-- Unmapped: 26 (pending roadmap)
+- Mapped to phases: 26
+- Unmapped: 0
+
+**Phase breakdown:**
+- Phase 1: 4 requirements (DEP-01, TUT-01, TUT-02, TUT-03)
+- Phase 2: 16 requirements (INP-01, INP-02, INP-04, OPS-01-06, DSP-01-03, TST-01-02, TUT-01-03)
+- Phase 3: 7 requirements (UI-01-03, INP-03, TUT-01-03)
+- Phase 4: 5 requirements (TST-03-04, TUT-01-03)
+- Phase 5: 5 requirements (DEP-02-03, TUT-01-03)
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after initial definition*
+*Last updated: 2026-02-14 after roadmap creation*
