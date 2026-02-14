@@ -89,10 +89,12 @@ Plans:
   5. CI passes without any manual steps (fully automated)
   6. Test failures show clear error messages with screenshots
   7. Korean tutorial in tutorial/phase-04.md explains Playwright setup and CI configuration
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- TBD (will be created during plan-phase)
+- [ ] 04-01-PLAN.md — Playwright setup, data-testid, and E2E test suite
+- [ ] 04-02-PLAN.md — GitHub Actions CI workflow
+- [ ] 04-03-PLAN.md — Korean tutorial for Playwright and CI
 
 ### Phase 5: Deployment & Polish
 **Goal**: CalTwo is publicly accessible at GitHub Pages URL with accessibility improvements
@@ -122,10 +124,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
 | 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
 | 3. UI Implementation | 3/3 | Complete | 2026-02-14 |
-| 4. E2E Testing & CI | 0/TBD | Not started | - |
+| 4. E2E Testing & CI | 0/3 | Not started | - |
 | 5. Deployment & Polish | 0/TBD | Not started | - |
 
 ---
 
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 3 completion*
+*Last updated: 2026-02-14 after Phase 4 planning*
