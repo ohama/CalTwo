@@ -9,7 +9,7 @@
 
 - [x] **INP-01**: User can input digits 0-9 by clicking buttons
 - [x] **INP-02**: User can input decimal point (.)
-- [ ] **INP-03**: User can delete last input character (Backspace)
+- [x] **INP-03**: User can delete last input character (Backspace)
 - [x] **INP-04**: User can clear all input (C/AC)
 
 ### Operations (OPS)
@@ -29,9 +29,9 @@
 
 ### UI (UI)
 
-- [ ] **UI-01**: Calculator has clean button grid layout (numbers, operators, clear, equals)
-- [ ] **UI-02**: Buttons show visual feedback on click (hover/active states)
-- [ ] **UI-03**: Layout is responsive (works on desktop and mobile)
+- [x] **UI-01**: Calculator has clean button grid layout (numbers, operators, clear, equals)
+- [x] **UI-02**: Buttons show visual feedback on click (hover/active states)
+- [x] **UI-03**: Layout is responsive (works on desktop and mobile)
 
 ### Testing (TST)
 
@@ -84,7 +84,7 @@
 |-------------|-------|--------|
 | INP-01 | Phase 2 | Complete |
 | INP-02 | Phase 2 | Complete |
-| INP-03 | Phase 3 | Pending |
+| INP-03 | Phase 3 | Complete |
 | INP-04 | Phase 2 | Complete |
 | OPS-01 | Phase 2 | Complete |
 | OPS-02 | Phase 2 | Complete |
@@ -95,9 +95,9 @@
 | DSP-01 | Phase 2 | Complete |
 | DSP-02 | Phase 2 | Complete |
 | DSP-03 | Phase 2 | Complete |
-| UI-01 | Phase 3 | Pending |
-| UI-02 | Phase 3 | Pending |
-| UI-03 | Phase 3 | Pending |
+| UI-01 | Phase 3 | Complete |
+| UI-02 | Phase 3 | Complete |
+| UI-03 | Phase 3 | Complete |
 | TST-01 | Phase 2 | Complete |
 | TST-02 | Phase 2 | Complete |
 | TST-03 | Phase 4 | Pending |
@@ -123,4 +123,4 @@
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after Phase 2 completion*
+*Last updated: 2026-02-14 after Phase 3 completion*

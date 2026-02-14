@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Tooling** - F# Elmish project with Vite, proper versioning, source maps
 - [x] **Phase 2: Core Calculator Logic** - Pure MVU implementation with arithmetic operations and unit tests
-- [ ] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
+- [x] **Phase 3: UI Implementation** - Responsive button grid, display, keyboard support
 - [ ] **Phase 4: E2E Testing & CI** - Playwright browser automation running in GitHub Actions
 - [ ] **Phase 5: Deployment & Polish** - GitHub Pages deployment with accessibility improvements
 
@@ -73,9 +73,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — BackspacePressed logic + CSS Grid UI + keyboard events
-- [ ] 03-02-PLAN.md — Korean tutorial for Phase 3
-- [ ] 03-03-PLAN.md — Human verification of UI layout and responsiveness
+- [x] 03-01-PLAN.md — BackspacePressed logic + CSS Grid UI + keyboard events
+- [x] 03-02-PLAN.md — Korean tutorial for Phase 3
+- [x] 03-03-PLAN.md — Human verification of UI layout and responsiveness
 
 ### Phase 4: E2E Testing & CI
 **Goal**: Browser automation tests verify calculator behavior without human intervention in CI
@@ -121,11 +121,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Tooling | 3/3 | Complete | 2026-02-14 |
 | 2. Core Calculator Logic | 3/3 | Complete | 2026-02-14 |
-| 3. UI Implementation | 0/3 | Not started | - |
+| 3. UI Implementation | 3/3 | Complete | 2026-02-14 |
 | 4. E2E Testing & CI | 0/TBD | Not started | - |
 | 5. Deployment & Polish | 0/TBD | Not started | - |
 
 ---
 
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-14*
+*Last updated: 2026-02-14 after Phase 3 completion*
