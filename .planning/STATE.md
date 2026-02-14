@@ -10,29 +10,29 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 ## Current Position
 
 Phase: 2 of 5 (Core Calculator Logic)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-14 — Completed 02-01-PLAN.md
+Last activity: 2026-02-14 — Completed 02-02-PLAN.md
 
-Progress: [███████░░░░] 66%
+Progress: [████████░░░] 73%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 3.6 min
-- Total execution time: 0.24 hours
+- Total plans completed: 5
+- Average duration: 3.3 min
+- Total execution time: 0.28 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-and-tooling | 3 | 11.5min | 3.8min |
-| 02-core-calculator-logic | 1 | 2.8min | 2.8min |
+| 02-core-calculator-logic | 2 | 5.8min | 2.9min |
 
 **Recent Trend:**
-- Last 5 plans: 9.5min, 1min, 2.8min
-- Trend: Phase 2 started, fast execution
+- Last 5 plans: 1min, 2.8min, 3min
+- Trend: Phase 2 maintaining fast execution with TDD
 
 *Updated after each plan completion*
 
@@ -56,6 +56,10 @@ Recent decisions affecting current work:
 - 02-01: PendingOp stores (MathOp * float) option for left-to-right evaluation
 - 02-01: MathResult discriminated union handles divide-by-zero gracefully
 - 02-01: Fable CLI as dotnet tool (consistent with .NET workflow)
+- 02-02: StartNew flag in Model tracks when next digit should replace display (enables operator chaining)
+- 02-02: OperatorPressed checks StartNew to distinguish operator replacement from evaluation
+- 02-02: Error state recovery on digit press (typing after 'Error' resets calculator)
+- 02-02: formatResult uses simple string conversion (F#/Fable handles .0 trimming)
 
 ### Pending Todos
 
@@ -67,6 +71,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T08:34:26Z
-Stopped at: Completed 02-01-PLAN.md — Test infrastructure and domain types ready
+Last session: 2026-02-14T08:39:05Z
+Stopped at: Completed 02-02-PLAN.md — Calculator logic fully tested with 27 passing unit tests
 Resume file: None
