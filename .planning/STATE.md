@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 ## Current Position
 
 Phase: 4 of 5 (E2E Testing and CI)
-Plan: 1 of 2 in current phase
+Plan: 2 of 2 in current phase
 Status: In progress
-Last activity: 2026-02-14 — Completed 04-01-PLAN.md
+Last activity: 2026-02-14 — Completed 04-02-PLAN.md
 
-Progress: [██████████░] 50%
+Progress: [███████████] 55%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 3.2 min
-- Total execution time: 0.55 hours
+- Total plans completed: 11
+- Average duration: 3.1 min
+- Total execution time: 0.59 hours
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [██████████░] 50%
 | 01-foundation-and-tooling | 3 | 11.5min | 3.8min |
 | 02-core-calculator-logic | 3 | 9.8min | 3.3min |
 | 03-ui-implementation | 3 | 8min | 2.7min |
-| 04-e2e-testing-and-ci | 1 | 3min | 3min |
+| 04-e2e-testing-and-ci | 2 | 4min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 3min, 4min, 1min, 3min
+- Last 5 plans: 4min, 1min, 3min, 1min
 - Trend: Consistent fast execution across phases
 
 *Updated after each plan completion*
@@ -77,6 +77,11 @@ Recent decisions affecting current work:
 - 04-01: strictPort: true in Vite config prevents port auto-increment (consistent test environment)
 - 04-01: webServer auto-start in Playwright config (tests manage dev server lifecycle)
 - 04-01: Use getByRole for button locators (accessibility-first, survives refactors)
+- 04-02: GitHub Actions for CI (native GitHub integration, free for public repos)
+- 04-02: .NET SDK 10.0.x in CI to match global.json (ensures consistent Fable compilation)
+- 04-02: Cache node_modules and Playwright browsers (reduces CI time from ~5min to ~1min)
+- 04-02: Install only Chromium browser in CI (matches local test environment, faster installs)
+- 04-02: Upload artifacts with if: !cancelled() (uploads on success/failure, skips on cancellation)
 
 ### Pending Todos
 
@@ -88,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-14T09:51:22Z
-Stopped at: Completed 04-01-PLAN.md — Playwright E2E test suite with 10 passing tests
+Last session: 2026-02-14T09:55:08Z
+Stopped at: Completed 04-02-PLAN.md — GitHub Actions CI with automated unit + E2E testing
 Resume file: None
