@@ -124,13 +124,14 @@ let view (model: Model) (dispatch: Msg -> unit) =
                         prop.style [
                             style.fontSize 32
                             style.padding 15
-                            style.backgroundColor "#222"
-                            style.color "#0f0"
+                            style.backgroundColor "#e8f4f8"
+                            style.color "#1a1a2e"
                             style.textAlign.right
                             style.marginBottom 10
                             style.borderRadius 5
                             style.minHeight 50
                             style.lineHeight (length.px 50)
+                            style.border (1, borderStyle.solid, "#b0d4e3")
                         ]
                         prop.text model.Display
                     ]
